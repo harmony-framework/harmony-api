@@ -1,0 +1,203 @@
+{
+	"info": {
+		"name": "Harmony-API",
+		"_postman_id": "0bb1da17-a962-4946-5598-37d6d545939e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"description": "",
+			"item": [
+				{
+					"name": "Authentication - Create User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"harmony-user@gmail.com\", \"password\":\"1234\"}"
+						},
+						"url": {
+							"raw": "http://localhost/authentication/createUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"authentication",
+								"createUser"
+							]
+						},
+						"description": "## HTTP REQUEST\n```\nPOST /createUser\n```\n## PARAMETERS\n\n**parameters**|**Description of the parameter**\n :-------------: |:-------------:\nusername| the username for login\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Authentication - Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"harmony-user@gmail.com\", \"password\":\"1234\"}"
+						},
+						"url": {
+							"raw": "http://localhost/authentication/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"authentication",
+								"login"
+							]
+						},
+						"description": "## HTTP REQUEST\n```\nPOST /createUser\n```\n## PARAMETERS\n\n**parameters**|**Description of the parameter**\n :-------------: |:-------------:\nusername| the username for login\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Authentication - Reset",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"ofir\", \"password\":\"1234\", \"token\":\"2\"}"
+						},
+						"url": {
+							"raw": "http://localhost/authentication/reset",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"authentication",
+								"reset"
+							]
+						},
+						"description": "## HTTP REQUEST\n```\nPOST /createUser\n```\n## PARAMETERS\n\n**parameters**|**Description of the parameter**\n :-------------: |:-------------:\nusername| the username for login\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Authentication - Password Change - Generate Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"harmony-user@gmail.com\"}"
+						},
+						"url": {
+							"raw": "http://localhost/authentication/generateToken",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"authentication",
+								"generateToken"
+							]
+						},
+						"description": "## HTTP REQUEST\n```\nPOST /createUser\n```\n## PARAMETERS\n\n**parameters**|**Description of the parameter**\n :-------------: |:-------------:\nusername| the username for login\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Authentication - Logout User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "0657692BCEF3067D9261E733B077AC16F55F1F0D6CD409E640284E9768862928A2BFA158293644046A2A2B11AF40B5A72A1C400BB08376AC9C854E57AE519F63"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"ofir\"}"
+						},
+						"url": {
+							"raw": "http://localhost/authentication/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"authentication",
+								"logout"
+							]
+						},
+						"description": "## HTTP REQUEST\n```\nPOST /createUser\n```\n## PARAMETERS\n\n**parameters**|**Description of the parameter**\n :-------------: |:-------------:\nusername| the username for login\n\n"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "General",
+			"description": "",
+			"item": [
+				{
+					"name": "General - Get User Information",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "D41B265CAE3A7C60AF37124C8DCEDBFF98863439B4EE317B380A44AC0F9EFB2EA02DF214556BED3C2632A832952CDCECA9439469CE52B15A2D2A95BC0729360B"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"harmony-user@gmail.com\"}"
+						},
+						"url": {
+							"raw": "http://localhost/getUserInformation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"getUserInformation"
+							]
+						},
+						"description": "## HTTP REQUEST\n```\nPOST /getUserInformation\n```\n## PARAMETERS\n\n**parameters**|**Description of the parameter**\n :-------------: |:-------------:\nusername| the username for login\n\n"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

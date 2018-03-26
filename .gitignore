@@ -1,0 +1,4 @@
+/vendor/
+/logs/*
+composer.lock
+!/logs/README.md
